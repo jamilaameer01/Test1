@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/style.css" />
+
+  </head>
+  <body>
+    <div class="data-holder">
+      <div class="wrap">
+        <div class="data-side">
+          <h2 id="data-sideh2">Let's Chat!</h2>
+          <p>
+            Speaking with people in the Senior Living & Care sector is something
+            we genuinely enjoy. Working in this field can be challenging,and the
+            privilege is ours to make every interaction with you a valuable one.
+          </p>
+          <p>
+            Working in this field can be challenging,and the privilege is ours
+            to make every interaction with you a valuable one.
+          </p>
+          <div class="section-two">
+            <div>
+              <h3>Canada Office</h3>
+              <a href="tel:16473667629"
+                ><img src="images/phone-call 2.png" alt="phone" /> +1
+                647-366-7629</a
+              >
+              Mississauga, ON L5B 1M5
+            </div>
+            <div>
+              <h3>USA Office</h3>
+              <a href="tel:16473667629"
+                ><img src="images/phone-call 2.png" alt="phone" /> +1
+                647-366-7629</a
+              >
+              Carlsbad, CA 92009
+            </div>
+          </div>
+
+          <div class="section-three">
+            <img src="images/logo.png" alt="United Active Living" /><br />
+            <div class="company">
+              <h2>Careen Chrusch</h2>
+              <img src="images/Group-q.png" alt="Test" />
+            </div>
+            <p id="pq">
+              I've had the pleasure of working with Digital Seniority over the
+              past few years on SEO, website design, development, and paid
+              advertising. They are highly knowledgeable, easy to work with, and
+              focused on business goals. Detail- oriented, results-driven, and
+              great at maximizing budgets. Highly recommended.
+            </p>
+            
+        
+          </div>
+          <button id="add1class">
+            hello
+          </button>
+          
+        </div>
+      
+
+
+        <div class="form-box">
+          <div class="form-side">
+            <h2>Send us a message</h2>
+            <form>
+              <div class="form-group">
+                <input type="text" placeholder="First Name*" />
+                <input type="text" placeholder="Last Name*" />
+              </div>
+              <div class="form-group">
+                <input type="email" placeholder="Work Email" />
+                <input type="phone" placeholder="Phone Number" />
+              </div>
+              <div class="form-group">
+                <input type="text" placeholder="Company Name" />
+                <select id="by">
+                  <option value="">Budget</option>
+                  <option value="">High</option>
+                  <option value="">Low</option>
+                  <option value="">Normal</option>
+                </select>
+              </div>
+              <textarea id="" name="" rows="4" cols="50">Message</textarea>
+              <button type="submit" value="Submit">Get in Touch</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+<!-- js query -->
+
+    <script>
+    $(document).ready(function(){
+     $(":button").click(function(){
+      $(".section-three").remove()
+     })
+     $(".data-side").click(function(){
+      $(".section-three").append("<h3>by g <h3>")
+     })
+   
+     });
+    </script>
+  </body>
+</html>
